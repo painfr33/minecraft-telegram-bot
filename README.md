@@ -1,78 +1,62 @@
-# MineCraft Telgram Bot
-## _A Telegram Bot that can manage your mc server and inform you_
+# 🤖 Minecraft Telegram Bot (MTB)  
+### _Умный бот-ассистент для твоего Minecraft сервера в Telegram!_ 🎮✨  
 
-MTB is a fast, customizable, useful telegram bot for your Minecraft server.
+MTB — это быстрый, гибкий и суперполезный бот, который поможет управлять твоим Minecraft сервером прямо из Telegram!  
 
-![](https://cdn.dribbble.com/users/1140536/screenshots/17790766/media/18d84ee30cbebf638fc9773196be4e84.gif)
+![](https://cdn.dribbble.com/users/1140536/screenshots/17790766/media/18d84ee30cbebf638fc9773196be4e84.gif)  
 
-## ✨ Features (till now)
+## 🔥 Возможности (пока что):  
+- **Количество игроков онлайн** 👥  
+- **Список ников онлайн-игроков** 📝  
+- **Сборка и отправка коллажа с аватарками игроков** 🖼️✨  
 
-- Number of online users
-- Usernames of online users
-- Merging and sending pictures of online users
+## ⚡ Установка  
+MTB работает на [Docker](https://www.docker.com/) — просто, быстро и без лишних заморочек!  
 
-## ⚙️ Installation
-
-MTB only and only requires [Docker](https://www.docker.com/) to run.
-
-Install Docker and start the bot, docker takes care of other dependencies.
-
+### 1️⃣ Ставим Docker:  
 ```sh
 apt install docker-ce
-```
+```  
 
-Now clone the repo:
+### 2️⃣ Клонируем репозиторий:  
 ```sh
 git clone https://github.com/revisto/minecraft-telegram-bot
 cd minecraft-telegram-bot
-```
+```  
 
-Let's take care of .env files...
-
+### 3️⃣ Настраиваем конфиг (.env):  
 ```sh
 cp mc_bot/.env.example .env
+```  
+Открываем `.env` и заполняем:  
 ```
-.env file contains your minecraft server and your telegram bot data. fill it like this:
-```
-minecraft_server_ip=<IP>
-minecraft_server_port=<PORT>
-telegram_robot_access_token=<TELEGRAM_ACCESS_TOKEN>
-```
+minecraft_server_ip=<IP_ТВОЕГО_СЕРВЕРА>  
+minecraft_server_port=<ПОРТ>  
+telegram_robot_access_token=<ТОКЕН_ТВОЕГО_БОТА>  
+```  
 
-## Adding Pictures of Users
-You can add pictures of your Minecraft server users in the ```users_pictures``` directory. Create a subdirectory for each user with their username and add their pictures there. For example:
+## 📸 Добавляем фото игроков  
+Хочешь, чтобы бот отправлял фотки игроков? Легко!  
+Создай папку `users_pictures` и добавляй фото по никам:  
 ```sh
-users_pictures/revisto:
-rev.jpg  another_pic.jpg
+users_pictures/revisto:  
+rev.jpg  another_pic.jpg  
 
-users_pictures/mehrshad:
-mehrshad.jpg  photo_2024-01-31_10-31-26.jpg
-```
+users_pictures/mehrshad:  
+mehrshad.jpg  photo_2024-01-31_10-31-26.jpg  
+```  
+Бот сам соберёт коллаж и отправит его по запросу! 🎨  
 
-The bot will automatically merge these pictures and send them when requested.
-
-## Docker
-
-Make sure that you have done all installation steps and made .env files.
-then, build it and run it.
+## 🐳 Запуск через Docker  
+Всё настроил? Тогда погнали! 🚀  
 ```sh
 docker build -t mc_bot .
 docker run -d mc_bot
-```
+```  
 
-## 🤝 Contributing
+## 💡 Хочешь помочь проекту?  
+Присоединяйся! Баги, идеи, улучшения — всё здесь:  
+🔹 [Страница с issues](https://github.com/revisto/minecraft-telegram-bot/issues)  
 
-Contributions, issues and feature requests are welcome.<br />
-Feel free to check [issues page](https://github.com/revisto/minecraft-telegram-bot/issues) if you want to contribute.<br /><br />
-
-
-## Show your support
-
-Please ⭐️ this repository if this project helped you!
-
-
-## 📝 License
-
-GNUv2
-
-**Free Software, Hell Yeah!**
+## 💙 Поддержать проект  
+Поставь ⭐️ репозиторию, если бот тебе понравился!  
