@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>config module &mdash; документация Minecraft Telegram Bot 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="file_service module" href="file_service.html" />
+    <link rel="prev" title="bot module" href="bot.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Minecraft Telegram Bot
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Модули проекта:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">minecraft-telegram-bot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="minecraft-telegram-bot.html">minecraft-telegram-bot package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="minecraft-telegram-bot.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.bot.html">minecraft-telegram-bot.bot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.config.html">minecraft-telegram-bot.config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.file_service.html">minecraft-telegram-bot.file_service module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.minecraft_service.html">minecraft-telegram-bot.minecraft_service module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="minecraft-telegram-bot.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bot.html">bot module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">config module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#config.Config.MINECRAFT_SERVER_IP"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_IP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config.Config.MINECRAFT_SERVER_PORT"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_PORT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config.Config.TELEGRAM_ACCESS_TOKEN"><code class="docutils literal notranslate"><span class="pre">Config.TELEGRAM_ACCESS_TOKEN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config.Config.MINECRAFT_SERVER_ADDRESS"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_IP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_PORT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">Config.TELEGRAM_ACCESS_TOKEN</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file_service.html">file_service module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file_service.html#file_service.FileManager"><code class="docutils literal notranslate"><span class="pre">FileManager</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="file_service.html#file_service.FileManager.get_gifs"><code class="docutils literal notranslate"><span class="pre">FileManager.get_gifs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="file_service.html#file_service.FileManager.get_user_pictures"><code class="docutils literal notranslate"><span class="pre">FileManager.get_user_pictures()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="file_service.html#file_service.ImageFeatures"><code class="docutils literal notranslate"><span class="pre">ImageFeatures</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="file_service.html#file_service.ImageFeatures.generate_users_pictures"><code class="docutils literal notranslate"><span class="pre">ImageFeatures.generate_users_pictures()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="file_service.html#file_service.ImageFeatures.merge_images_side_by_side"><code class="docutils literal notranslate"><span class="pre">ImageFeatures.merge_images_side_by_side()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="minecraft_service.html">minecraft_service module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="minecraft_service.html#minecraft_service.Minecraft_Status"><code class="docutils literal notranslate"><span class="pre">Minecraft_Status</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="minecraft_service.html#minecraft_service.Minecraft_Status.get_online_users_count"><code class="docutils literal notranslate"><span class="pre">Minecraft_Status.get_online_users_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="minecraft_service.html#minecraft_service.Minecraft_Status.get_online_users_names"><code class="docutils literal notranslate"><span class="pre">Minecraft_Status.get_online_users_names()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="minecraft_service.html#minecraft_service.offline_server_handler"><code class="docutils literal notranslate"><span class="pre">offline_server_handler()</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Основные разделы:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="minecraft-telegram-bot.html">minecraft-telegram-bot package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="minecraft-telegram-bot.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.bot.html">minecraft-telegram-bot.bot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.config.html">minecraft-telegram-bot.config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.file_service.html">minecraft-telegram-bot.file_service module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minecraft-telegram-bot.minecraft_service.html">minecraft-telegram-bot.minecraft_service module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="minecraft-telegram-bot.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Руководство разработчика</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Minecraft Telegram Bot</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">config module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/config.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-config">
+<span id="config-module"></span><h1>config module<a class="headerlink" href="#module-config" title="Ссылка на этот заголовок"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="config.Config">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">config.</span></span><span class="sig-name descname"><span class="pre">Config</span></span><a class="reference internal" href="_modules/config.html#Config"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#config.Config" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Конфигурация бота, загружаемая из .env файла.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="config.Config.MINECRAFT_SERVER_IP">
+<span class="sig-name descname"><span class="pre">MINECRAFT_SERVER_IP</span></span><a class="headerlink" href="#config.Config.MINECRAFT_SERVER_IP" title="Ссылка на это определение"></a></dt>
+<dd><p>IP адрес Minecraft сервера</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="config.Config.MINECRAFT_SERVER_PORT">
+<span class="sig-name descname"><span class="pre">MINECRAFT_SERVER_PORT</span></span><a class="headerlink" href="#config.Config.MINECRAFT_SERVER_PORT" title="Ссылка на это определение"></a></dt>
+<dd><p>Порт Minecraft сервера</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="config.Config.TELEGRAM_ACCESS_TOKEN">
+<span class="sig-name descname"><span class="pre">TELEGRAM_ACCESS_TOKEN</span></span><a class="headerlink" href="#config.Config.TELEGRAM_ACCESS_TOKEN" title="Ссылка на это определение"></a></dt>
+<dd><p>Токен Telegram бота</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="config.Config.MINECRAFT_SERVER_ADDRESS">
+<span class="sig-name descname"><span class="pre">MINECRAFT_SERVER_ADDRESS</span></span><a class="headerlink" href="#config.Config.MINECRAFT_SERVER_ADDRESS" title="Ссылка на это определение"></a></dt>
+<dd><p>Полный адрес сервера (IP:PORT)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">MINECRAFT_SERVER_ADDRESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'None:None'</span></em><a class="headerlink" href="#id0" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">MINECRAFT_SERVER_IP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id1" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">MINECRAFT_SERVER_PORT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id2" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">TELEGRAM_ACCESS_TOKEN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id3" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="bot.html" class="btn btn-neutral float-left" title="bot module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="file_service.html" class="btn btn-neutral float-right" title="file_service module" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, A. Nonyaeva, P. Shumakova, E. Polkhovskaya, B. Chestikov. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

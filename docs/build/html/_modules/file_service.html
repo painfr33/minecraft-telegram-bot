@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>file_service &mdash; документация Minecraft Telegram Bot 1.0</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=cd1d70c9"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Minecraft Telegram Bot
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Модули проекта:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">minecraft-telegram-bot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../minecraft-telegram-bot.html">minecraft-telegram-bot package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../minecraft-telegram-bot.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.bot.html">minecraft-telegram-bot.bot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.config.html">minecraft-telegram-bot.config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.file_service.html">minecraft-telegram-bot.file_service module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.minecraft_service.html">minecraft-telegram-bot.minecraft_service module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../minecraft-telegram-bot.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../bot.html">bot module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">config module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../config.html#config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#config.Config.MINECRAFT_SERVER_IP"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_IP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#config.Config.MINECRAFT_SERVER_PORT"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_PORT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#config.Config.TELEGRAM_ACCESS_TOKEN"><code class="docutils literal notranslate"><span class="pre">Config.TELEGRAM_ACCESS_TOKEN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#config.Config.MINECRAFT_SERVER_ADDRESS"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#id0"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_ADDRESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#id1"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_IP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#id2"><code class="docutils literal notranslate"><span class="pre">Config.MINECRAFT_SERVER_PORT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../config.html#id3"><code class="docutils literal notranslate"><span class="pre">Config.TELEGRAM_ACCESS_TOKEN</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../file_service.html">file_service module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../file_service.html#file_service.FileManager"><code class="docutils literal notranslate"><span class="pre">FileManager</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../file_service.html#file_service.FileManager.get_gifs"><code class="docutils literal notranslate"><span class="pre">FileManager.get_gifs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../file_service.html#file_service.FileManager.get_user_pictures"><code class="docutils literal notranslate"><span class="pre">FileManager.get_user_pictures()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../file_service.html#file_service.ImageFeatures"><code class="docutils literal notranslate"><span class="pre">ImageFeatures</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../file_service.html#file_service.ImageFeatures.generate_users_pictures"><code class="docutils literal notranslate"><span class="pre">ImageFeatures.generate_users_pictures()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../file_service.html#file_service.ImageFeatures.merge_images_side_by_side"><code class="docutils literal notranslate"><span class="pre">ImageFeatures.merge_images_side_by_side()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../minecraft_service.html">minecraft_service module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../minecraft_service.html#minecraft_service.Minecraft_Status"><code class="docutils literal notranslate"><span class="pre">Minecraft_Status</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../minecraft_service.html#minecraft_service.Minecraft_Status.get_online_users_count"><code class="docutils literal notranslate"><span class="pre">Minecraft_Status.get_online_users_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../minecraft_service.html#minecraft_service.Minecraft_Status.get_online_users_names"><code class="docutils literal notranslate"><span class="pre">Minecraft_Status.get_online_users_names()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../minecraft_service.html#minecraft_service.offline_server_handler"><code class="docutils literal notranslate"><span class="pre">offline_server_handler()</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Основные разделы:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../minecraft-telegram-bot.html">minecraft-telegram-bot package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../minecraft-telegram-bot.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.bot.html">minecraft-telegram-bot.bot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.config.html">minecraft-telegram-bot.config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.file_service.html">minecraft-telegram-bot.file_service module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../minecraft-telegram-bot.minecraft_service.html">minecraft-telegram-bot.minecraft_service module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../minecraft-telegram-bot.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide.html">Руководство разработчика</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Minecraft Telegram Bot</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Код модуля</a></li>
+      <li class="breadcrumb-item active">file_service</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Исходный код file_service</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
+
+<div class="viewcode-block" id="FileManager">
+<a class="viewcode-back" href="../file_service.html#file_service.FileManager">[документация]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">FileManager</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">videos_base_path</span> <span class="o">=</span> <span class="s2">&quot;./videos&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">users_pictures_base_path</span> <span class="o">=</span> <span class="s2">&quot;./users_pictures&quot;</span>
+
+<div class="viewcode-block" id="FileManager.get_gifs">
+<a class="viewcode-back" href="../file_service.html#file_service.FileManager.get_gifs">[документация]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_gifs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory_number</span><span class="p">):</span>
+        <span class="n">directory_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">videos_base_path</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">directory_number</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">directory_path</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory_path</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">directory_path</span><span class="p">)</span> <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.gif&#39;</span><span class="p">)]</span></div>
+
+
+<div class="viewcode-block" id="FileManager.get_user_pictures">
+<a class="viewcode-back" href="../file_service.html#file_service.FileManager.get_user_pictures">[документация]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_user_pictures</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">):</span>
+        <span class="n">username</span> <span class="o">=</span> <span class="n">username</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">users_pictures_base_path</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">[]</span>  <span class="c1"># Return an empty list if the base path doesn&#39;t exist</span>
+
+        <span class="n">directories</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">users_pictures_base_path</span><span class="p">),</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="p">[],</span> <span class="kc">None</span><span class="p">))[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">user_directory</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">directory</span> <span class="ow">in</span> <span class="n">directories</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">directory</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">username</span><span class="p">:</span>
+                <span class="n">user_directory</span> <span class="o">=</span> <span class="n">directory</span>
+                <span class="k">break</span>
+        <span class="k">if</span> <span class="n">user_directory</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[]</span>  <span class="c1"># Return an empty list if the user&#39;s directory doesn&#39;t exist</span>
+
+        <span class="n">user_directory_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">users_pictures_base_path</span><span class="p">,</span> <span class="n">user_directory</span><span class="p">)</span>
+        <span class="n">pictures</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">user_directory_path</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">user_directory_path</span><span class="p">)</span> <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.jpg&#39;</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="n">pictures</span></div>
+</div>
+
+
+<div class="viewcode-block" id="ImageFeatures">
+<a class="viewcode-back" href="../file_service.html#file_service.ImageFeatures">[документация]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">ImageFeatures</span><span class="p">:</span>
+<div class="viewcode-block" id="ImageFeatures.generate_users_pictures">
+<a class="viewcode-back" href="../file_service.html#file_service.ImageFeatures.generate_users_pictures">[документация]</a>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generate_users_pictures</span><span class="p">(</span><span class="n">online_users</span><span class="p">):</span>
+        <span class="n">image_paths</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">username</span> <span class="ow">in</span> <span class="n">online_users</span><span class="p">:</span>
+            <span class="n">username_pictures</span> <span class="o">=</span> <span class="n">FileManager</span><span class="p">()</span><span class="o">.</span><span class="n">get_user_pictures</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">username_pictures</span> <span class="o">!=</span> <span class="p">[]:</span>
+                <span class="n">image_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">username_pictures</span><span class="p">))</span>
+        
+        <span class="k">if</span> <span class="n">image_paths</span> <span class="o">!=</span> <span class="p">[]:</span>
+            <span class="k">return</span> <span class="n">ImageFeatures</span><span class="o">.</span><span class="n">merge_images_side_by_side</span><span class="p">(</span><span class="n">image_paths</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="ImageFeatures.merge_images_side_by_side">
+<a class="viewcode-back" href="../file_service.html#file_service.ImageFeatures.merge_images_side_by_side">[документация]</a>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">merge_images_side_by_side</span><span class="p">(</span><span class="n">image_paths</span><span class="p">,</span> <span class="n">resample</span><span class="o">=</span><span class="n">Image</span><span class="o">.</span><span class="n">BICUBIC</span><span class="p">):</span>
+        <span class="n">images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">image_paths</span><span class="p">]</span>
+        <span class="n">min_height</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">height</span> <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">images</span><span class="p">)</span>
+        <span class="n">resized_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="nb">int</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">min_height</span> <span class="o">/</span> <span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">),</span> <span class="n">min_height</span><span class="p">),</span> <span class="n">resample</span><span class="o">=</span><span class="n">resample</span><span class="p">)</span> <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">images</span><span class="p">]</span>
+        <span class="n">total_width</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">width</span> <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">resized_images</span><span class="p">)</span>
+        <span class="n">combined_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">total_width</span><span class="p">,</span> <span class="n">min_height</span><span class="p">))</span>
+        <span class="n">current_position</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">resized_images</span><span class="p">:</span>
+            <span class="n">combined_image</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="n">current_position</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+            <span class="n">current_position</span> <span class="o">+=</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span>
+        <span class="n">image_bytes_io</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>
+        <span class="n">combined_image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">image_bytes_io</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;JPEG&#39;</span><span class="p">)</span>
+        <span class="n">image_bytes_io</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">image_bytes_io</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, A. Nonyaeva, P. Shumakova, E. Polkhovskaya, B. Chestikov. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
